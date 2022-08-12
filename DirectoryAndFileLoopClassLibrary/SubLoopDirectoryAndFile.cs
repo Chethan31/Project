@@ -13,28 +13,30 @@ namespace DirectoryAndFileLoopClassLibrary
 {
     public class SubLoopDirectoryAndFile : ISubLoopDirectoryAndFile
     {
-        public void SubDirectoryandFile(string path)
+        List<string> AllFiles = new List<string>();
+        public List<string> SubDirectoryandFile(string path)
         {
+            IFileFinder fileFinder = new FileFinder();
+            List<string> files = fileFinder.GetFileInfo(path);
+            foreach (string file in files)
+            {
+                AllFiles.Add(file);
+                //Console.WriteLine($"file:{file}");
+            }
             IDirectoryFinder directoryFinder = new DirectoryFinder();
             List<string> dir = directoryFinder.GetDirectoryInfo(path);
             foreach (string d in dir)
             {
                 try
                 {
-                    Console.WriteLine($"Directory {d}");
-                    IFileFinder fileFinder = new FileFinder();
-                    List<string> files = fileFinder.GetFileInfo(d);
-                    foreach (string file in files)
-                    {
-                        Console.WriteLine($"file:{file}");
-                    }
+                    //Console.WriteLine($"Directory {d}");
                     SubDirectoryandFile(d);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
                 }
             }
+            return AllFiles;
         }
     }
 }

@@ -8,6 +8,6 @@ namespace DirectoryAndFileLoopClassLibrary
 {
     public interface ISubLoopDirectoryAndFile
     {
-        void SubDirectoryandFile(string path);
+        List<string> SubDirectoryandFile(string path);
     }
 }
