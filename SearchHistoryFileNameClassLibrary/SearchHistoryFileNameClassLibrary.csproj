@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DriveAllFilesAndDirectoryClassLibrary\DriveAllFilesAndDirectoryClassLibrary.csproj" />
-    <ProjectReference Include="..\SearchHistoryFileNameClassLibrary\SearchHistoryFileNameClassLibrary.csproj" />
     <ProjectReference Include="..\SearchHistorySaveAndReadDataClassLibrary\SearchHistorySaveAndReadDataClassLibrary.csproj" />
     <ProjectReference Include="..\SplitPathToFileNameClassLibrary\SplitPathToFileNameClassLibrary.csproj" />
   </ItemGroup>

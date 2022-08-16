@@ -5,33 +5,38 @@ using System.Text;
 using System.Threading.Tasks;
 using DriveAllFilesAndDirectoryClassLibrary;
 using SplitPathToFileNameClassLibrary;
+using SearchHistorySaveAndReadDataClassLibrary;
+using SearchHistoryFileNameClassLibrary;
 
 namespace SearchFileNameClassLibrary
 {
     public class SearchFileNameInDrives : ISearchFIleNameInDrives
     {
-        public void SearchFileName(string fileName)
+        public List<string> SearchFileName(string fileName)
         {
+            ISearchHistoryFileName search = new SearchHistoryFileName();
             int flag = 0;
-            int f = 0;
+            //int f = 0;
+            List<string> files = new List<string>();
             List<string> listOfFilePath = new List<string>();
             IDriveAllFilesAndDirectory classDrive = new DriveAllFilesAndDirectory();
-            listOfFilePath=classDrive.AllFilesAndDirectory();
+            listOfFilePath = classDrive.AllFilesAndDirectory();
             ISplitPathToFileName SPN = new SplitPathToFileName();
-            foreach(string file in listOfFilePath)
+            ISaveAndReadData SR = new SaveAndReadData();
+            foreach (string file in listOfFilePath)
             {
                 if (fileName == SPN.SplitPath(file))
                 {
-                    if(f == 0)
-                        Console.WriteLine("File Found in Path....");
-                    Console.WriteLine(file);
-                    f = 1;
+                    //Console.WriteLine(file);
+                    SR.SaveData(file);
+                    files.Add(file);
                     flag = 1;
                 }
-                //Console.WriteLine(SPN.SplitPath(file));
             }
-            if(flag == 0)
-                Console.WriteLine("File Not Found....");
+            if (flag == 0)
+                return null;
+            else
+                return files;
         }
     }
 }

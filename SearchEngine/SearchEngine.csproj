@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SearchFileNameClassLibrary\SearchFileNameClassLibrary.csproj" />
+    <ProjectReference Include="..\SearchHistoryFileNameClassLibrary\SearchHistoryFileNameClassLibrary.csproj" />
   </ItemGroup>
 
 </Project>

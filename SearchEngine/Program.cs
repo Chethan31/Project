@@ -1,5 +1,4 @@
 ﻿using DriveFinderClassLibrary;
-using SearchFileNameClassLibrary;
  namespace SearchEngine
 {
     internal class Prgram
@@ -18,9 +17,8 @@ using SearchFileNameClassLibrary;
             Console.WriteLine("----------------------------------------");
             Console.Write("Enter a FileName To be Searched:");
             string FileName = Console.ReadLine();
-
-            ISearchFIleNameInDrives search = new SearchFileNameInDrives();
-            search.SearchFileName(FileName);
+            
+            SearchFile.Search(FileName);
         }
     }
 }

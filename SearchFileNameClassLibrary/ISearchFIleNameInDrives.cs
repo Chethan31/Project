@@ -8,6 +8,6 @@ namespace SearchFileNameClassLibrary
 {
     public interface ISearchFIleNameInDrives
     {
-        void SearchFileName(string fileName);
+        List<string> SearchFileName(string fileName);
     }
 }

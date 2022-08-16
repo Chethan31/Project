@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchFileNameClassLibrary"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitPathToFileNameClassLibrary", "SplitPathToFileNameClassLibrary\SplitPathToFileNameClassLibrary.csproj", "{B406DA55-9E16-4973-850F-2B90CC8FB0F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchHistorySaveAndReadDataClassLibrary", "SearchHistorySaveAndReadDataClassLibrary\SearchHistorySaveAndReadDataClassLibrary.csproj", "{BA7A9BD5-A3EF-43F1-A187-40C731DE5CF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchHistoryFileNameClassLibrary", "SearchHistoryFileNameClassLibrary\SearchHistoryFileNameClassLibrary.csproj", "{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{B406DA55-9E16-4973-850F-2B90CC8FB0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B406DA55-9E16-4973-850F-2B90CC8FB0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B406DA55-9E16-4973-850F-2B90CC8FB0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7A9BD5-A3EF-43F1-A187-40C731DE5CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7A9BD5-A3EF-43F1-A187-40C731DE5CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7A9BD5-A3EF-43F1-A187-40C731DE5CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7A9BD5-A3EF-43F1-A187-40C731DE5CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
