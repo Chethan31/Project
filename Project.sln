@@ -3,25 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchEngine", "SearchEngine\SearchEngine.csproj", "{9111AC43-587A-40AD-8C62-E36B491D68B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchEngine", "SearchEngine\SearchEngine.csproj", "{9111AC43-587A-40AD-8C62-E36B491D68B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveFinderClassLibrary", "DriveFinderClassLibrary\DriveFinderClassLibrary.csproj", "{AE4E6B7D-E551-43A4-AEE2-E12CA55F8D0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DriveFinderClassLibrary", "DriveFinderClassLibrary\DriveFinderClassLibrary.csproj", "{AE4E6B7D-E551-43A4-AEE2-E12CA55F8D0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFinderInDriveClassLibrary", "FileFinderInDriveClassLibrary\FileFinderInDriveClassLibrary.csproj", "{E2244ACF-2707-4F0D-B2E4-A7E46EB1E6D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFinderInDriveClassLibrary", "FileFinderInDriveClassLibrary\FileFinderInDriveClassLibrary.csproj", "{E2244ACF-2707-4F0D-B2E4-A7E46EB1E6D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryFinderInDriveClassLibrary", "DirectoryFinderInDriveClassLibrary\DirectoryFinderInDriveClassLibrary.csproj", "{D9EEA3B9-1E69-42C5-BBA0-6D9380632010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectoryFinderInDriveClassLibrary", "DirectoryFinderInDriveClassLibrary\DirectoryFinderInDriveClassLibrary.csproj", "{D9EEA3B9-1E69-42C5-BBA0-6D9380632010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryAndFileLoopClassLibrary", "DirectoryAndFileLoopClassLibrary\DirectoryAndFileLoopClassLibrary.csproj", "{2B342877-6255-476A-BCA3-8C4F0849E68A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectoryAndFileLoopClassLibrary", "DirectoryAndFileLoopClassLibrary\DirectoryAndFileLoopClassLibrary.csproj", "{2B342877-6255-476A-BCA3-8C4F0849E68A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveAllFilesAndDirectoryClassLibrary", "DriveAllFilesAndDirectoryClassLibrary\DriveAllFilesAndDirectoryClassLibrary.csproj", "{30E05C6B-8F61-4A49-9DA0-159545A5D442}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DriveAllFilesAndDirectoryClassLibrary", "DriveAllFilesAndDirectoryClassLibrary\DriveAllFilesAndDirectoryClassLibrary.csproj", "{30E05C6B-8F61-4A49-9DA0-159545A5D442}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchFileNameClassLibrary", "SearchFileNameClassLibrary\SearchFileNameClassLibrary.csproj", "{BF5A25FE-9AEF-4379-B8B0-613628366F18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchFileNameClassLibrary", "SearchFileNameClassLibrary\SearchFileNameClassLibrary.csproj", "{BF5A25FE-9AEF-4379-B8B0-613628366F18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitPathToFileNameClassLibrary", "SplitPathToFileNameClassLibrary\SplitPathToFileNameClassLibrary.csproj", "{B406DA55-9E16-4973-850F-2B90CC8FB0F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SplitPathToFileNameClassLibrary", "SplitPathToFileNameClassLibrary\SplitPathToFileNameClassLibrary.csproj", "{B406DA55-9E16-4973-850F-2B90CC8FB0F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchHistorySaveAndReadDataClassLibrary", "SearchHistorySaveAndReadDataClassLibrary\SearchHistorySaveAndReadDataClassLibrary.csproj", "{BA7A9BD5-A3EF-43F1-A187-40C731DE5CF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchHistorySaveAndReadDataClassLibrary", "SearchHistorySaveAndReadDataClassLibrary\SearchHistorySaveAndReadDataClassLibrary.csproj", "{BA7A9BD5-A3EF-43F1-A187-40C731DE5CF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchHistoryFileNameClassLibrary", "SearchHistoryFileNameClassLibrary\SearchHistoryFileNameClassLibrary.csproj", "{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchHistoryFileNameClassLibrary", "SearchHistoryFileNameClassLibrary\SearchHistoryFileNameClassLibrary.csproj", "{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SellPhoneStore", "SellPhoneStore", "{5199B475-F927-4527-A9E1-79909E2F9373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SellPhonesStore.Entities", "SellPhonesStore.Entities\SellPhonesStore.Entities.csproj", "{C1E87CB6-E6AF-49B1-A124-866F14168713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SellPhonesStore.DataAccess", "SellPhonesStore.DataAccess\SellPhonesStore.DataAccess.csproj", "{7DBDDE52-7666-40AE-AF8F-9A684C6F2901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SellPhonesStore.ConsoleClient", "SellPhonesStore.ConsoleClient\SellPhonesStore.ConsoleClient.csproj", "{DC18AE95-28ED-4B46-AEDD-F3AD5C109D95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,9 +77,26 @@ Global
 		{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB1EDC77-BC9A-4F76-9095-B70F364BAFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E87CB6-E6AF-49B1-A124-866F14168713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E87CB6-E6AF-49B1-A124-866F14168713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E87CB6-E6AF-49B1-A124-866F14168713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E87CB6-E6AF-49B1-A124-866F14168713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBDDE52-7666-40AE-AF8F-9A684C6F2901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBDDE52-7666-40AE-AF8F-9A684C6F2901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBDDE52-7666-40AE-AF8F-9A684C6F2901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBDDE52-7666-40AE-AF8F-9A684C6F2901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC18AE95-28ED-4B46-AEDD-F3AD5C109D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC18AE95-28ED-4B46-AEDD-F3AD5C109D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC18AE95-28ED-4B46-AEDD-F3AD5C109D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC18AE95-28ED-4B46-AEDD-F3AD5C109D95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1E87CB6-E6AF-49B1-A124-866F14168713} = {5199B475-F927-4527-A9E1-79909E2F9373}
+		{7DBDDE52-7666-40AE-AF8F-9A684C6F2901} = {5199B475-F927-4527-A9E1-79909E2F9373}
+		{DC18AE95-28ED-4B46-AEDD-F3AD5C109D95} = {5199B475-F927-4527-A9E1-79909E2F9373}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D641DCFE-B6ED-4526-80BB-073C64E82E2D}
