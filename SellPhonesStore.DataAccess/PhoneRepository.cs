@@ -43,7 +43,15 @@ namespace SellPhonesStore.DataAccess
 
         public long SaveCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            SellPhonesStoreDbContext db = new SellPhonesStoreDbContext();
+            db.Customers.Add(customer);
+            db.SaveChanges();
+
+            var id = (from c in db.Customers
+                      where c.EmailId == customer.EmailId
+                      select c.CustomerId).FirstOrDefault();
+
+            return id;
         }
 
         public long SaveOrder(CustomerOrder order)
