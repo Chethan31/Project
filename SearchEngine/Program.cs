@@ -1,7 +1,7 @@
 ﻿using DriveFinderClassLibrary;
  namespace SearchEngine
 {
-    internal class Prgram
+    internal class Program
     {
         public static void Main()
         {
