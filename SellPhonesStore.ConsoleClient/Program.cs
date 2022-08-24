@@ -6,7 +6,8 @@ namespace SellPhonesStore.ConsoleClient
     {
         static void Main(string[] args)
         {
-            phone();
+            //phone();
+            //customer();
         }
 
 
@@ -25,6 +26,26 @@ namespace SellPhonesStore.ConsoleClient
             IPhoneRepository PR = new PhoneRepository();
             long id = PR.SavePhone(p);
             Console.WriteLine($"Phone has Saved in Id:{id}");
+        }
+
+        private static void customer()
+        {
+            Customer c = new Customer();
+            Console.Write("Enter Customer Name:");
+            c.CustomerName = Console.ReadLine();
+            Console.Write("Enter Email ID:");
+            c.EmailId = Console.ReadLine();
+            Console.Write("Enter City:");
+            c.City = Console.ReadLine();
+            Console.Write("Enter Street Name:");
+            c.StreetName = Console.ReadLine();
+            Console.Write("Enter Pincode:");
+            c.PinCode = Console.ReadLine();
+            Console.Write("Enter Mobile Number:");
+            c.MobileNo = long.Parse(Console.ReadLine());
+            IPhoneRepository PR = new PhoneRepository();
+            long id = PR.SaveCustomer(c);
+            Console.WriteLine($"Customer has Saved in Id:{id}");
         }
     }
 }
