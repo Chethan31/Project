@@ -13,11 +13,12 @@ namespace SellPhonesStore.DataAccess
         {
             List<CustomerOrder> orders = new List<CustomerOrder>();
             SellPhonesStoreDbContext db = new SellPhonesStoreDbContext();
-            var result = from c in db.CustomOrders
+            var result = from c in db.CustomerOrders
                          select c;
+            
             foreach (var order in result)
             {
-                Console.WriteLine(order);
+               // Console.WriteLine(order.OrderId + "\t" + order.OrderTotal + "\t\t" + order.OrderDate + "\t" + res.CustomerName);
                 orders.Add(order);
             }
             return orders;
@@ -30,7 +31,7 @@ namespace SellPhonesStore.DataAccess
             var cus = (from cu in db.Customers
                       where cu.CustomerId == customerId
                       select cu).FirstOrDefault();
-            var result = from c in db.CustomOrders
+            var result = from c in db.CustomerOrders
                          where c.Customer==cus
                          select c;
             foreach (var order in result)
@@ -56,12 +57,42 @@ namespace SellPhonesStore.DataAccess
 
         public long SaveOrder(CustomerOrder order)
         {
-            throw new NotImplementedException();
+            SellPhonesStoreDbContext db = new SellPhonesStoreDbContext();
+            var res = (from p in db.Customers
+                       where p.CustomerId == 2
+                       select p).FirstOrDefault();
+            order.Customer = res;
+            db.CustomerOrders.Add(order);
+            db.SaveChanges();
+            
+            var id= (from o in db.CustomerOrders
+                    where o.OrderDate==order.OrderDate
+                    select o.OrderId).FirstOrDefault();
+
+            return id;
         }
 
         public long SaveOrderedPhone(OrdereredPhone orderPhone, long orderId)
         {
-            throw new NotImplementedException();
+            
+            SellPhonesStoreDbContext db = new SellPhonesStoreDbContext();
+            var order = (from oi in db.CustomerOrders
+                         where oi.OrderId == orderId
+                         select oi).FirstOrDefault();
+            
+            var res = (from p in db.Phones
+                       where p.PhoneId == 2
+                       select p).FirstOrDefault();
+            orderPhone.OrderedPhone = res;
+            db.OrdereredPhones.Add(orderPhone);
+            order.OrderedPhones.Add(orderPhone);
+            db.SaveChanges();
+
+            var id = (from o in db.OrdereredPhones
+                      where o == orderPhone
+                      select o.OrderedPhoneId).FirstOrDefault();
+
+            return id;
         }
 
         public long SavePhone(Phone phone)

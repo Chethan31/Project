@@ -7,10 +7,26 @@ namespace SellPhonesStore.ConsoleClient
         static void Main(string[] args)
         {
             //phone();
-            //customer();
+            customer();
+            //orderPhone();
+           // displayAllCustomer();
         }
 
-
+        private static void displayAllCustomer()
+        {
+            List<CustomerOrder> orders = new List<CustomerOrder>();
+            IPhoneRepository PR = new PhoneRepository();
+            orders=PR.GetAllCustomerOrders();
+            Console.WriteLine("OrderId\tOrderTotal\tOrderDate");
+            SellPhonesStoreDbContext db = new SellPhonesStoreDbContext();
+            foreach(CustomerOrder order in orders)
+            {
+                var res = (from c in db.Customers
+                           where c==order.Customer
+                           select c).FirstOrDefault();
+                Console.WriteLine(order.OrderId+"\t"+order.OrderTotal+"\t\t"+order.OrderDate+"\t"+res.CustomerName);
+            }
+        }
         private static void phone()
         {
             Phone p= new Phone();
@@ -47,5 +63,30 @@ namespace SellPhonesStore.ConsoleClient
             long id = PR.SaveCustomer(c);
             Console.WriteLine($"Customer has Saved in Id:{id}");
         }
+
+        private static long cusorder()
+        {
+            SellPhonesStoreDbContext db = new SellPhonesStoreDbContext();
+            CustomerOrder order = new CustomerOrder();
+            order.OrderDate=DateTime.Now;
+            Console.WriteLine("Enter total:");
+            order.OrderTotal=float.Parse(Console.ReadLine());
+            
+
+            IPhoneRepository PR = new PhoneRepository();
+
+            return PR.SaveOrder(order);
+        }
+
+        private static long orderPhone()
+        {
+            SellPhonesStoreDbContext db = new SellPhonesStoreDbContext();
+            OrdereredPhone order = new OrdereredPhone();
+            Console.WriteLine("Enter Quantity:");
+            order.Quantity = float.Parse(Console.ReadLine());
+            IPhoneRepository PR = new PhoneRepository();
+            return PR.SaveOrderedPhone(order,cusorder());
+        }
+
     }
 }

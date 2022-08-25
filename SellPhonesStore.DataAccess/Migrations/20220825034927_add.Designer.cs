@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SellPhonesStore.DataAccess;
 
@@ -11,9 +12,10 @@ using SellPhonesStore.DataAccess;
 namespace SellPhonesStore.DataAccess.Migrations
 {
     [DbContext(typeof(SellPhonesStoreDbContext))]
-    partial class SellPhonesStoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220825034927_add")]
+    partial class add
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

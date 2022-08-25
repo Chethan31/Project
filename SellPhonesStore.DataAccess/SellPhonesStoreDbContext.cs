@@ -16,7 +16,7 @@ namespace SellPhonesStore.DataAccess
         }
         public DbSet<Phone> Phones { get; set; }
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<CustomerOrder> CustomOrders { get; set; }
+        public DbSet<CustomerOrder> CustomerOrders { get; set; }
         public DbSet<OrdereredPhone> OrdereredPhones { get; set; }
     }
 }
