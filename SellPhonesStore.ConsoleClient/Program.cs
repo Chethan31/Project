@@ -24,7 +24,7 @@ namespace SellPhonesStore.ConsoleClient
                 var res = (from c in db.Customers
                            where c==order.Customer
                            select c).FirstOrDefault();
-                Console.WriteLine(order.OrderId+"\t"+order.OrderTotal+"\t\t"+order.OrderDate+"\t"+res.CustomerName);
+                Console.WriteLine(order.OrderId+"\t"+order.OrderTotal+"\t\t"+order.OrderDate);
             }
         }
         private static void phone()
